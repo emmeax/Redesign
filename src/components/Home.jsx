@@ -32,7 +32,7 @@ const Home = () => {
           viewport={{ once: false, amount: 0.2 }} 
           className="space-y-10 md:space-y-6 text-left order-2 md:order-1"
         >
-          <h1 className="text-5xl text-center md:text-left font-inter font-semibold text-gray-900">Hi</h1>
+          <h1 className="text-5xl text-center md:text-left font-inter font-semibold text-gray-900">Hi,</h1>
           <h2 className="text-5xl text-center md:text-left font-inter font-semibold text-blue-700">I'm Tobyteq</h2>
           
            <p className="text-[#000000] text-lg font-inter font-regular leading-relaxed tracking-wide">
