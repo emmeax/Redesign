@@ -15,7 +15,7 @@ function App() {
       
 
       {/* Sections with IDs for smooth scrolling */}
-      <section id="hero">
+      <section id="home">
       <Hero />
       </section>
       <section>

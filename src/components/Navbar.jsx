@@ -40,7 +40,7 @@ const Navbar = () => {
 
       {/* Desktop Menu */}
       <div className="hidden md:flex space-x-6 absolute left-1/2 transform -translate-x-1/2">
-        <Link to="hero" smooth={true} duration={800} className="text-gray-700 hover:text-blue-500 cursor-pointer">
+        <Link to="home" smooth={true} duration={800} className="text-gray-700 hover:text-blue-500 cursor-pointer">
           Home
         </Link>
         <Link to="process" smooth={true} duration={800} className="text-gray-700 hover:text-blue-500 cursor-pointer">
@@ -60,7 +60,7 @@ const Navbar = () => {
           </button>
 
           <Link
-            to="hero"
+            to="home"
             smooth={true}
             duration={800}
             className="text-lg text-gray-700 cursor-pointer"
