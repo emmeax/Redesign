@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import MyProcess from "./components/MyProcess";
 import MoreProjects from "./components/MoreProjects";
-// import Contact from "./components/Contact";
+import Contact from "./components/Contact";
 import Project from './components/Project'
 import Home from './components/Home'
 
@@ -31,9 +31,9 @@ function App() {
         <MoreProjects />
       </section>
 
-      {/* <section id="contact">
+      <section id="contact">
         <Contact />
-      </section> */}
+      </section>
     </div>
   );
 }
