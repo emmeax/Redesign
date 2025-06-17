@@ -53,7 +53,7 @@ const Home = () => {
             className="bg-white rounded-lg shadow-lg p-3   mt-10 flex justify-center items-center gap-10 md:gap-12 w-full max-w-4xl"
           >
             <div className="text-center">
-              <h3 className="text-2xl font-inter font-bold text-blue-700">6 </h3>
+              <h3 className="text-2xl font-inter font-bold text-blue-700">9 </h3>
               <p className="text-gray-600 text-sm font-inter font-medium"> Years Experience</p>
             </div>
             <div className="text-center">
