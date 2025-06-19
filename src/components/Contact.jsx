@@ -1,4 +1,5 @@
 import { useState } from "react";
+import borderBg from "../assets/Images/Rectangle 3468084.png"; 
 
 const Contact = () => {
   const [showIframe, setShowIframe] = useState(false);
@@ -20,27 +21,38 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="w-screen bg-black py-10 text-white">
-      <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-2xl md:text-4xl font-bold text-center mb-8">
-          Book a Meeting
-        </h2>
-
+    <div
+      id="contact"
+      className="w-screen bg-white py-7 px-4 flex justify-center items-center"
+      style={{
+        backgroundImage: `url(${borderBg})`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundSize: "contain",
+      }}
+    >
+      <div className="relative  w-full px-8 md:px-16 py-6 text-center border border-transparent overflow-hidden">
         {!showIframe ? (
-          <div className="text-center">
+          <div className="relative z-10 px-8 md:px-16 py-16">
+            <h2 className="text-2xl md:text-4xl font-montserrate font-semibold text-gray-900 mb-6">
+              Are You Ready to Create Videos <br /> That Make an Impact?
+            </h2>
+            <p className="text-gray-700 font-inter font-regular text-2xl max-w-xl mx-auto mb-4">
+              I am ready to help you, your brand or companies <br /> create high-quality videos that tell powerful stories <br /> and leave powerful impressions.
+            </p>
+            <p className="text-blue-700 font-inter font-medium text-2xl mb-8">
+              Let’s talk about how I can bring your ideas to life!
+            </p>
             <button
               onClick={handleScheduleClick}
-              className="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300"
+              className="bg-[#024B8A] hover:bg-blue-800 font-inter font-bold text-white font-semibold py-3 px-6 rounded-md transition duration-300"
             >
-              Schedule a 30-Min Call
+              Book a Free Call
             </button>
           </div>
         ) : (
-          <div>
-            <div
-              id="cal-frame"
-              className="mt-10 border rounded-xl overflow-hidden bg-white"
-            >
+          <div className="relative z-10 w-full">
+            <div id="cal-frame" className="w-full">
               <iframe
                 src="https://cal.com/tobyteq/30min"
                 width="100%"
@@ -48,15 +60,14 @@ const Contact = () => {
                 frameBorder="0"
                 scrolling="no"
                 style={{
-                  borderRadius: "12px",
+                  borderRadius: "0px", // full edge to edge inside the card
                   width: "100%",
                   maxWidth: "100%",
                 }}
                 title="Schedule a 30-Min Call"
               ></iframe>
             </div>
-
-            <div className="text-center mt-6">
+            <div className="text-center my-6">
               <button
                 onClick={handleBackClick}
                 className="bg-gray-700 hover:bg-gray-800 text-white font-medium py-2 px-5 rounded-md transition duration-300"
