@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <section className="bg-[#EEF2FF] px-6 md:px-10 pt-10 space-y-16">
       {/* First Intro Section */}
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2  gap-16 items-center">
         {/* Image */}
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
