@@ -4,7 +4,7 @@ import PP2 from "../assets/Images/PP2.png";
 
 const Main = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center gap-10 md:max-w-6xl md:ml-12 w-full px-6 md:px-0 ">
+    <div className="flex flex-col md:flex-row justify-center items-center gap-10 md:max-w-6xl md:mr-6 w-full px-6 md:px-0 ">
       {/* Image Section */}
       <motion.div
         className="relative flex justify-center w-full md:w-auto"
@@ -16,7 +16,7 @@ const Main = () => {
         <motion.img
           src={PP2}
           alt="Profile"
-          className="rounded-lg w-64 md:w-72 object-cover h-auto mt-14 md:mt-0"
+          className="rounded-lg w-full max-w-[18rem] md:max-w-[20rem] object-cover h-auto mt-14 md:mt-0"
           whileInView={{ scale: 1 }}
           initial={{ scale: 0.8 }}
           transition={{ duration: 0.6 }}
