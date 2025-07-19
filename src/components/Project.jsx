@@ -92,7 +92,7 @@ const ProjectCard = () => {
   const [playingVideo, setPlayingVideo] = useState(null);
 
   return (
-    <section className="bg-[#EEF2FF] py-16 px-6 md:px-12">
+    <section className="bg-[#EEF2FF] py-16 px-6 md:px-10">
       <div className="container mx-auto">
         <motion.h2
           className="text-3xl font-bold text-blue-900 "

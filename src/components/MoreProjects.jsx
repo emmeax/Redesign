@@ -29,9 +29,9 @@ const ProjectCard = ({ title, image }) => {
       initial={{ opacity: 0, y: 50 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: false, amount: 0.2 }}
-      className="bg-white shadow-lg p-4 rounded-xl w-full max-w-xs"
+      className=" bg-white shadow-lg p-4 rounded-xl w-full max-w-xs"
     >
-      <div className="w-full h-40 flex items-center justify-center bg-gray-100 rounded-lg overflow-hidden">
+      <div className=" container w-full h-40 flex items-center justify-center bg-gray-100 rounded-lg overflow-hidden">
         <video ref={videoRef} src={image} className="w-full h-full object-cover" />
       </div>
       <h3 className="font-semibold mt-2 text-left">{title}</h3>
@@ -49,7 +49,7 @@ const ProjectCard = ({ title, image }) => {
 
 const MoreProjects = () => {
   return (
-    <div className="min-h-screen flex flex-col item-left md:items-center py-16 px-6">
+    <div className="min-h-screen flex flex-col items-center py-16 px-14 md:px-0">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: 50 }}
@@ -64,7 +64,7 @@ const MoreProjects = () => {
         initial={{ opacity: 0, y: 50 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: false, amount: 0.2 }}
-        className="text-gray-700 text-left md:text-center mb-10"
+        className="text-gray-700 justify-center hidden md:block text-left md:item-center mb-10"
       >
         Here are some more of the great work I have done for my amazing
         <span className="item-center">
@@ -72,6 +72,15 @@ const MoreProjects = () => {
           <br />
           clients across different industries
         </span>
+      </motion.p>
+      <motion.p
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 50 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: false, amount: 0.2 }}
+        className="text-gray-700 justify-center md:hidden block text-left md:item-center mb-10"
+      >
+        Here are some more of the great work I have done for my amazing clients across different industries
       </motion.p>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {projects.map((project, index) => (

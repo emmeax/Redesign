@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-// import Hero from "./components/Hero";
+import Hero from "./components/Hero";
 import MyProcess from "./components/MyProcess";
 import MoreProjects from "./components/MoreProjects";
 import Contact from "./components/Contact";
@@ -15,9 +15,9 @@ function App() {
       
 
       {/* Sections with IDs for smooth scrolling */}
-      {/* <section id="home">
+      <section id="home">
       <Hero />
-      </section> */}
+      </section>
       <section>
       <Project/>
       </section>
